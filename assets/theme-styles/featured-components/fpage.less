@@ -1,0 +1,223 @@
+.static_page-content1,.static_page-content3 {
+  display: inline-block;
+  width: 100%;
+  background: darken(@background,3%);
+  .static_page-container {
+    padding: 40px 15px;
+  }
+  .hvr-bounce-to-bottom:before{
+    content:"";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:rgba(255, 255, 255, 0.2);
+  }
+  .h-content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    @media screen and (max-width: 767px){
+      padding-bottom: 0px;
+      padding-top: 0px;
+    }
+
+    h1.title{
+      color: @content;
+      font-size: 32px;
+      @media screen and (max-width: 991px) {
+        font-size: 24px;
+      }
+        text-transform: uppercase;
+
+    }
+    .more-button{
+      //color: @content;
+      color: @onaccent;
+      padding:13px 20px;
+      font-size:16px;
+      background:@accent;
+      top: 10px;
+      position:relative;
+      z-index:999;
+      display: inline-block;
+      transition: all ease 0.5s;
+      text-transform: uppercase;
+
+      &:hover {
+        padding:13px 20px;
+        font-size:16px;
+        color: @content;
+        background:@onaccent;
+        transition: all ease 0.5s;
+        text-decoration: none;
+        text-transform: uppercase;
+
+      }
+    }
+    .excerpt {
+      display: inline-block;
+      color: @content;
+      @media screen and (max-width: 767px){
+        margin: 0px;
+      }
+    }
+  }
+  .f-image{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    @media screen and (max-width: 767px){
+      padding-top: 0px;
+    }
+    img {
+      width: 100%;
+      transition: all ease 0.5s;
+      filter: brightness(70%);
+      filter: alpha(opacity=50); /* For IE8 and earlier */
+      @media screen and (max-width: 767px) {
+        margin-top: 20px;
+      }
+    }
+    img:hover {
+      filter: brightness(80%);
+      filter: alpha(opacity=100); /* For IE8 and earlier */
+    }
+  }
+ }
+@media screen and (min-width:430px) and (max-width:980px){
+  .f-image{
+
+    img {
+      width: 100%;
+      margin-top: 2px}
+  }
+  .h-content{
+    margin-bottom:50px;
+    padding: 0px;
+    .more-button{
+
+      &:hover {
+        padding:13px 20px;
+        font-size:16px;
+        color:@onaccent;
+        background:@content;
+      }
+    }
+    p{
+      margin-top: 20px;
+    }
+  }
+}
+.h-content p{margin-top: 20px;}
+
+.centered{text-align: center;}
+
+//static page 2 start
+.static_page-content2 {
+  display: inline-block;
+  width: 100%;
+  background: @background;
+  .static_page-container {
+    padding: 40px 15px;
+  }
+  .h-content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    @media screen and (max-width: 767px){
+      padding-bottom: 0px;
+      padding-top: 0px;
+    }
+    p{
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 767px){
+      padding-bottom: 0px;
+    }
+
+    h1.title{
+      color: @content;
+      font-size: 32px;
+      @media screen and (max-width: 991px) {
+        font-size: 24px;
+      }
+      text-transform: uppercase;
+    }
+    .more-button{
+      //color: @content;
+      color: @onaccent;
+      padding:13px 20px;
+      font-size:16px;
+      background:@accent;
+      top: 10px;
+      position:relative;
+      z-index:999;
+      display: inline-block;
+      transition: all ease 0.5s;
+      text-transform: uppercase;
+
+      &:hover {
+        padding:13px 20px;
+        font-size:16px;
+        color: @onaccent;
+        background: @content;
+        transition: all ease 0.5s;
+        text-decoration: none;
+        text-transform: uppercase;
+
+      }
+    }
+    .excerpt {
+      display: inline-block;
+      color: @content;
+      @media screen and (max-width: 767px){
+        margin: 0px;
+      }
+    }
+  }
+  .f-image{
+    float: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    @media screen and (max-width: 767px){
+      padding-top: 0px;
+    }
+    img {
+      width: 100%;
+      transition: all ease 0.5s;
+      filter: brightness(70%);
+      filter: alpha(opacity=50); /* For IE8 and earlier */
+      @media screen and (max-width: 767px) {
+        margin-top: 20px;
+      }
+    }
+    img:hover {
+      filter: brightness(80%);
+      filter: alpha(opacity=100); /* For IE8 and earlier */
+    }
+  }
+}
+@media screen and (min-width:430px) and (max-width:980px){
+  .f-image{
+
+    img {
+      width: 100%;
+      margin-top: 2px}
+  }
+  .h-content{
+    margin-bottom:50px;
+    padding: 0px;
+    .more-button{
+
+      &:hover {
+        padding:13px 20px;
+        font-size:16px;
+        color:@onaccent;
+        background:@content;
+      }
+    }
+  }
+}
+.centered{text-align: center;}
+//static page 2 end

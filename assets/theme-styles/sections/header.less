@@ -1,0 +1,78 @@
+#masthead{
+  .site-branding{
+    @media screen and (min-width: 767px) and (max-width: 1200px){
+      float: none;
+      text-align: center;
+    }
+    padding: 0px 10px;
+    float: left;
+    @media screen and (max-width: 767px){
+      float: none;
+    }
+    h1.site-title a{
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 32px;
+      @media screen and (max-width: 767px){
+        font-size: 28px;
+      }
+      color: @content;
+      letter-spacing: 1.5px;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    p.site-description{
+      color: @content;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+
+  }
+  .site-description{
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  .site-title-wrapper {
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+  }
+}
+
+.header-image-wrapper {
+	margin-bottom: 60px;
+}
+
+.header-image #mobile-header-image{
+  img{
+    width: 100% !important;
+  }
+}
+//logo
+#site-logo {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+  max-width: 300px;
+  @media screen and (max-width: 1200px) {
+    margin-right: 30px;
+    margin-left: 30px;
+    float: none;
+    max-width: 150px;
+    max-height: 150px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+#masthead{
+  @media screen and (min-width: 767px) and (max-width: 991px) {
+    text-align: center;
+    display: block !important;
+  }
+}

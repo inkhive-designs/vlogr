@@ -1,0 +1,28 @@
+.top-bar{
+  #top-buttons {
+    float: right;
+    padding: 20px 0px;
+    @media screen and (max-width: 991px) {
+      float: none;
+      text-align: center;
+      background: none;
+
+    }
+    button {
+      background: @highlight-bg;
+      border: none;
+      color: @onaccent;
+      text-shadow: none;
+      font-weight: normal;
+      font-size: 14px;
+      margin-left: 5px;
+      padding-top: 5px;
+      i {
+        margin-right: 7px;
+      }
+      &:hover{
+        background: @accent;
+      }
+    }
+  }
+}

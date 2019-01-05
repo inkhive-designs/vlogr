@@ -1,0 +1,47 @@
+/* --------------- pagination ------------ */
+.pagination {
+  margin: 20px 0;
+  padding-top: 25px;
+  text-align: center;
+  width: 100%;
+  clear: both;
+  ul {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 0px;
+    & > li {
+      display: inline;
+      & > a {
+        color: @highlight-bg;
+        .transition(all 0.4s ease);
+        font-size: 14px;
+      }
+      & > a:hover {
+        color: @accent;
+        background: @accent;
+      }
+    }
+  }
+  .current {
+    background: @accent;
+    color: @onaccent;
+  }
+}
+.pagination ul &>li &>a, .pagination ul &>li &>span {
+  float: left;
+  padding: 4px 12px;
+  line-height: 20px;
+  text-decoration: none;
+  margin-right: 5px;
+  background-color: @background;
+  border: 1px solid darken(@background,10%);
+  text-transform: uppercase;
+  font-family: "Sriracha", sans-serif;
+  display: inline-block;
+  color: @accent;
+  &:hover {
+    background: none;
+  }
+}

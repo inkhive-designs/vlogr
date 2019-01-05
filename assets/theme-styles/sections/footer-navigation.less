@@ -1,0 +1,37 @@
+@media screen and (max-width: 767px) {
+  .footer-menu-wrapper {
+    display: none;
+  }
+}
+.footer-menu-wrapper {
+	margin-bottom: 26px;
+	text-align: center;
+	position: relative;
+	padding: 20px 0px;
+	.main-navigation {
+		float: none;
+	}
+	ul {
+		display: inline-block !important;
+		li {
+			ul.children {
+				display: none !important;
+			}
+			a {
+				padding: 0px 15px;
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+				color: @content;
+				&:hover{
+					color: @accent;
+				}
+			}
+			&:hover {
+				ul.children {
+					display: none !important;
+				}
+			}
+		}
+	}
+}

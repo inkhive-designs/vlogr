@@ -1,0 +1,144 @@
+/* --------------- comments -------------- */
+#respond {
+  h3#reply-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: @accent;
+  }
+  input[type=text] {
+    max-width: 550px;
+  }
+  input, textarea {
+    background: darken(@background,5%);
+    border: solid 1px darken(@background,20%);
+    color: @content;
+    outline: none;
+    @media screen and (max-width: 767px) {
+      width: 200px !important;
+    }
+  }
+  p.comment-form-author label #author{
+    width: 200px !important;
+  }
+  .comment-form-author, .comment-form-email, .comment-form-url, .comment-form-comment {
+    position: relative;
+
+    input, textarea {
+      padding: 4px 5px 5px 10px;
+      border-radius: 0;
+      @media screen and (max-width: 767px) {
+        width: 200px !important;
+      }
+    }
+    label {
+      background: @accent;
+      color: @background;
+      border-bottom: solid 1px @accent;
+      padding: 5px;
+      margin-right: -5px;
+      min-width: 200px;
+      text-align: center;
+    }
+  }
+  .comment-author{
+    .fn a{
+      color: red;
+    }
+  }
+  .comment-form-comment {
+    label {
+      margin-bottom: 0px;
+    }
+  }
+  .form-submit {
+    input[type=submit] {
+      box-shadow: none;
+      text-shadow: none;
+      padding: 10px;
+      background: @accent;
+      a {
+        color: @onaccent;
+      }
+      font-weight: bold;
+      text-align: center;
+      color: darken(@onaccent,10%);
+      margin-bottom: 60px;
+      font-size: 12px;
+    }
+  }
+  .comment-notes, .logged-in-as {
+    color: @accent;
+  }
+}
+
+#comments {
+  .reply{
+    a{
+      color: @accent;
+    }
+  }
+  margin-top: 55px;
+  h2.comments-title {
+    font-size: x-large;
+
+  }
+  ol.comment-list {
+    list-style: none;
+    margin-left: 0px;
+  }
+  li.comment {
+    padding: 10px;
+    margin-top: 15px;
+    list-style: none;
+    background: darken(@background,10%);
+    .comment-content {
+      color: @content;
+      font-weight: lighter;
+      p{
+        a{
+          color: @content;
+        }
+      }
+    }
+  }
+  li.trackback {
+    background: lighten(@background,10%);
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: solid 1px #eee;
+    font-weight: bold;
+    a { font-weight: normal; }
+  }
+  .vcard img {
+    border: solid 1px @onaccent;
+    border-radius: 3px;
+    margin: 0 10px 10px 0;
+  }
+  .form-allowed-tags {
+    display: none;
+  }
+  .comment-author,.vcard{
+    b.fn{
+      color: @accent;
+      a{
+        color: @accent;
+      }
+    }
+  }
+  .comment-metadata {
+    font-weight: bold;
+    time {
+      float: right;
+      color: darken(@background, 30%);
+      font-weight: lighter;
+      font-style: italic;
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width:480px) {
+  li.comment {
+    margin-left: -5%;
+  }
+}

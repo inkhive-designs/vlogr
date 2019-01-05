@@ -1,0 +1,25 @@
+/**
+ *
+ *	Styling for the Customizer Controls
+ *
+**/
+.sortable {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+}
+.sortable div {
+  cursor: move;
+}
+.sortable .repeater-input {
+  border: dashed 1px #aaa;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 700;
+}
+.sortable .disabled {
+  color: #bbb;
+}
+.sortable .disabled div {
+  cursor: not-allowed;
+}

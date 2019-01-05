@@ -1,0 +1,67 @@
+.body-font {
+  font-family: "Karla", sans-serif;
+}
+.title-font {
+  font-family: "Sriracha", sans-serif;
+  //font-family: "Six Caps", sans-serif;
+}
+.body{
+  overflow-x: auto;
+  .body-font;
+}
+.page-header {
+  margin-top: 0px;
+  border-bottom: none;
+  h1 {
+    font-size: 18px;
+    font-weight: lighter;
+    border-bottom: solid 1px #e1e1e1;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+}
+/* section titles */
+.section-title {
+  color: @content;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-indent: 20px;
+  text-align: center;
+  position: relative;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  @media screen and (max-width: 991px) {
+    font-size: 24px;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+  }
+}
+body.home #main{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search #primary{
+  .page-content .search-form{
+    text-align: center;
+    label{
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      input[type=search]{
+        width: 70%;
+        padding: 10px;
+      }
+    }
+    input[type=submit]{
+      width: 30%;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+}

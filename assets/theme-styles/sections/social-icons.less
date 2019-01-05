@@ -1,0 +1,70 @@
+#colophon{
+  .footer-social-icons {
+    text-align: center;
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    a {
+      padding: 12px;
+      font-size: 14px;
+      display: inline-block;
+      @media screen and (min-width: 200px) and (max-width: 1200px) {
+        font-size: 14px;
+        padding: 8px;
+      }
+      transition: all ease 0.5s;
+      background: fade(black, 5%);
+      border: 2px darken(@background, 5%) solid;
+      border-radius: 24px;
+      i.fa-facebook-f{
+        color: #3B5998;
+        transition: all ease 0.5s;
+
+      }
+      i.fa-twitter{
+        color: #1DA1F2;
+        transition: all ease 0.5s;
+      }
+      i.fa-google-plus-g{
+        color: #DD4B39;
+        transition: all ease 0.5s;
+      }
+      i.fa-instagram {
+        color: #F56040;
+        transition: all ease 0.5s;
+      }
+      i.fa-vine{
+        color: #00B488;
+        transition: all ease 0.5s;
+      }
+      i.fa-vimeo-v{
+        color: #1AB7EA;
+        transition: all ease 0.5s;
+      }
+      i.fa-youtube{
+        color: #FF0000;
+        transition: all ease 0.5s;
+      }
+      i.fa-flickr{
+        color: #FF0084;
+        transition: all ease 0.5s;
+      }
+      i.fa-pinterest-p{
+        color: #BD081C;
+        transition: all ease 0.5s;
+      }
+        &:hover {
+          transition: all ease 0.5s;
+          background: darken(@background,10%);
+          border: 2px @onaccent solid;
+          border-radius: 24px;
+        i {
+          color: @onaccent;
+        }
+      }
+    }
+  }
+}
